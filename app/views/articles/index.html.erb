@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Body</th>
+        </tr>
+    </thead>
+
+    <body>
+        <% @articles.each do |article| %>
+            <tr>
+                <id><%= article.id %></td>
+                <id><%= article.name %></td>
+                <id><%= article.body %></td>
+            </tr>
+        <% end %>
+    </body>
+</table>
