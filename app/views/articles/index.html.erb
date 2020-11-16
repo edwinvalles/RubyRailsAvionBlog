@@ -7,13 +7,17 @@
         </tr>
     </thead>
 
-    <body>
+    <tbody>
         <% @articles.each do |article| %>
             <tr>
-                <id><%= article.id %></td>
-                <id><%= article.name %></td>
-                <id><%= article.body %></td>
+                <td><%= article.id %></td>
+                <td><%= article.name %></td>
+                <td><%= article.body %></td>
+                <td><%= link_to 'Edit', edit_article_path(article) %></td>
+                <td><%= link_to 'Show', show_article_path(article) %></td>
             </tr>
         <% end %>
-    </body>
+    </tbody>
 </table>
+
+<%= link_to 'New Article', new_article_path %>
