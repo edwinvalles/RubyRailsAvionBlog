@@ -1,6 +1,9 @@
 <%= form_with method: :put, scope: :article, url: update_article_path(@article.id), local: true do |f| %>
     <!-- ^ defines the path for editing articles -->
-    
+
+    <h1>Blaga-blog</h1>
+    <h2>Edit Article</h2>
+
         <p>
             <% if @article.errors.any? %>
                 <ul>
@@ -14,12 +17,12 @@
         </p>
     <!-- ^ puts error checking -->
     
-        <p>
+        <p class='input_field' id='input_name'>
             <%= f.label :name %>
             <%= f.text_field :name %>
         </p>
     
-        <p>
+        <p class='input_field' id='input_body'>
             <%= f.label :body %>
             <%= f.text_field :body %>
         </p>

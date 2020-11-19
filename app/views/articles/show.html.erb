@@ -1,12 +1,14 @@
-<h1>Selected Article</h1>
+<h1>Blaga-blog</h1>
+<h2>Selected Article</h2>
 
 <p>
-Title: <%= @article.name %>
-</p>
+    <strong>Title: </strong><br><%= @article.name %>
+</p><br>
 
 <p>
-Body: <%= @article.body %>
+    <strong>Body: </strong><br><%= @article.body %>
+</p><br>
+
+<p class='click_links'>
+    <%= link_to 'Back to Articles', articles_path %>
 </p>
-
-<%= link_to 'Back to Articles', articles_path %>
-

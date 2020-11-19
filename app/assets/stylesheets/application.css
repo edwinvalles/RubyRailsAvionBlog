@@ -14,4 +14,50 @@
  *= require_self
  */
 
- 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1, h2 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.article_id, .column_labels {
+    display: none;
+}
+
+.article_layout {
+    display: grid;
+    grid-template-rows: 3;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 5px;
+    width: 1300px;
+    height: max-content;
+    cursor: pointer;
+}
+
+.btn {
+    text-shadow: grey;
+    text-decoration-color: indigo;
+}
+
+.click_links {
+    text-align: center;
+    justify-content: center;
+    text-emphasis-color: grey;
+}
+
+input {
+    border: 1px solid #bbb;
+    width: 90%;
+    padding: 10px;
+    height: auto !important;
+    margin-bottom: 15px;  
+}

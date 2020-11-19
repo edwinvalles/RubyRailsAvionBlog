@@ -1,6 +1,9 @@
 <%= form_with scope: :article, url: create_article_path, local: true do |f| %>
 <!-- ^ defines the path for new articles -->
 
+<h1>Blaga-blog</h1>
+<h2>New Article</h2>
+
     <p>
         <% if @article.errors.any? %>
             <ul>
